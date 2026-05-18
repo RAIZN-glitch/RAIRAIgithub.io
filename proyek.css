@@ -1,0 +1,197 @@
+.proyek-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+}
+
+/* Hero */
+.proyek-hero {
+  margin-bottom: 80px;
+}
+
+.proyek-hero h1 {
+  font-size: 72px;
+  margin: 12px 0 16px;
+}
+
+.proyek-hero .stack {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.deskripsi {
+  max-width: 580px;
+  color: #aaa;
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+/* Info grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.info-blok {
+  background: #1a1a1a;
+  border: 1px solid #222;
+  padding: 24px;
+}
+
+.info-blok h3 {
+  color: #00ff15;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.info-blok ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-blok li {
+  color: #ccc;
+  font-size: 14px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.info-blok li::before {
+  content: "›";
+  color: #00ff15;
+  position: absolute;
+  left: 0;
+}
+
+/* Preview section */
+.proyek-preview h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* Terminal preview (Weather CLI) */
+.terminal {
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.terminal-bar {
+  background: #1a1a1a;
+  padding: 10px 14px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot.merah  { background: #ff5f57; }
+.dot.kuning { background: #ffbd2e; }
+.dot.hijau  { background: #28ca41; }
+
+.terminal-isi {
+  padding: 20px 24px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.terminal-isi .g { color: #00ff15; }
+
+/* Board preview (Task Board) */
+.board-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 640px;
+}
+
+.kolom-preview {
+  background: #111;
+  border: 1px solid #222;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kolom-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.task-item {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #ccc;
+  border-radius: 4px;
+}
+
+.task-item.aktif  { border-color: #00ff15; color: #fff; }
+.task-item.selesai { opacity: 0.4; text-decoration: line-through; }
+
+/* Bars preview (Sort Visualizer) */
+.bars-preview {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 160px;
+  max-width: 500px;
+  padding: 0 4px;
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bar {
+  flex: 1;
+  background: #2a2a2a;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.3s;
+}
+
+.bar.aktif  { background: #00ff15; }
+.bar.selesai { background: #1a5c1f; }
+
+.preview-label {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .proyek-detail {
+    padding: 40px 20px 80px;
+  }
+
+  .proyek-hero h1 {
+    font-size: 48px;
+  }
+
+  .board-preview {
+    grid-template-columns: 1fr;
+  }
+}

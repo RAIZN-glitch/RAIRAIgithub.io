@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather CLI — HAN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="proyek.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">#HAN<span></span></div>
+      <nav>
+        <a href="index.html">← Back</a>
+        <a href="index.html#proyek">Proyek</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main class="proyek-detail">
+      <section class="proyek-hero">
+        <p class="label">// 001</p>
+        <h1>Weather <span class="nama">CLI</span></h1>
+        <p class="stack">Python · API · CLI</p>
+        <p class="deskripsi">
+          Aplikasi cuaca terminal yang mengambil data dari OpenWeatherMap API
+          secara real-time. Cukup ketik nama kota, langsung dapat info cuaca
+          lengkap di terminal.
+        </p>
+        <a href="#" class="tombol">GitHub →</a>
+      </section>
+
+      <section class="proyek-info">
+        <div class="info-grid">
+          <div class="info-blok">
+            <h3>Fitur</h3>
+            <ul>
+              <li>Cuaca real-time dari API</li>
+              <li>Input nama kota bebas</li>
+              <li>Tampil suhu, kelembaban, angin</li>
+              <li>Output warna di terminal</li>
+            </ul>
+          </div>
+
+          <div class="info-blok">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>Python 3</li>
+              <li>OpenWeatherMap API</li>
+              <li>requests library</li>
+              <li>argparse (CLI args)</li>
+            </ul>
+          </div>
+
+          <div class="info-blok">
+            <h3>Yang Dipelajari</h3>
+            <ul>
+              <li>Konsumsi REST API</li>
+              <li>Parsing JSON response</li>
+              <li>Bikin CLI interaktif</li>
+              <li>Error handling API</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="proyek-preview">
+        <h2>Preview</h2>
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot merah"></span>
+            <span class="dot kuning"></span>
+            <span class="dot hijau"></span>
+          </div>
+          <pre class="terminal-isi">
+$ python weather.py Jakarta
+
+<span class="g">📍 Jakarta, ID</span>
+──────────────────────
+🌤  Cerah berawan
+🌡  32°C  (feels like 36°C)
+💧  Humidity: 78%
+🌬  Wind: 12 km/h
+──────────────────────</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer id="kontak">
+      <p>kontak saya</p>
+      <a href="https://www.linkedin.com/in/raihan-zaki-naufal-aa5920382/">LinkedIn</a>
+      <a href="https://trakteer.id/Han_azaki/tip">Trakteer</a>
+    </footer>
+  </body>
+</html>

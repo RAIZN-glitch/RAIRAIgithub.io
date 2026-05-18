@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board — HAN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="proyek.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">#HAN<span></span></div>
+      <nav>
+        <a href="index.html">← Back</a>
+        <a href="index.html#proyek">Proyek</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main class="proyek-detail">
+      <section class="proyek-hero">
+        <p class="label">// 002</p>
+        <h1>Task <span class="nama">Board</span></h1>
+        <p class="stack">HTML · CSS · JS</p>
+        <p class="deskripsi">
+          Kanban board minimalis untuk ngatur kerjaan harian. Task bisa
+          di-drag antar kolom (Todo, In Progress, Done) dan data tersimpan
+          otomatis di browser lewat localStorage — refresh pun data tetap ada.
+        </p>
+        <a href="#" class="tombol">GitHub →</a>
+        <a href="#" class="tombol">Live Demo →</a>
+      </section>
+
+      <section class="proyek-info">
+        <div class="info-grid">
+          <div class="info-blok">
+            <h3>Fitur</h3>
+            <ul>
+              <li>Drag & drop antar kolom</li>
+              <li>Tambah & hapus task</li>
+              <li>Auto-save ke localStorage</li>
+              <li>UI minimalis responsive</li>
+            </ul>
+          </div>
+
+          <div class="info-blok">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Flexbox + Grid)</li>
+              <li>Vanilla JavaScript</li>
+              <li>localStorage API</li>
+            </ul>
+          </div>
+
+          <div class="info-blok">
+            <h3>Yang Dipelajari</h3>
+            <ul>
+              <li>Drag & Drop API browser</li>
+              <li>State management manual</li>
+              <li>Persistensi data lokal</li>
+              <li>DOM manipulation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="proyek-preview">
+        <h2>Preview</h2>
+        <div class="board-preview">
+          <div class="kolom-preview">
+            <p class="kolom-label">Todo</p>
+            <div class="task-item">Belajar React</div>
+            <div class="task-item">Bikin portofolio</div>
+          </div>
+          <div class="kolom-preview">
+            <p class="kolom-label">In Progress</p>
+            <div class="task-item aktif">Ngerjain Weather CLI</div>
+          </div>
+          <div class="kolom-preview">
+            <p class="kolom-label">Done</p>
+            <div class="task-item selesai">Setup dev environment</div>
+            <div class="task-item selesai">Belajar Git</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="kontak">
+      <p>kontak saya</p>
+      <a href="https://www.linkedin.com/in/raihan-zaki-naufal-aa5920382/">LinkedIn</a>
+      <a href="https://trakteer.id/Han_azaki/tip">Trakteer</a>
+    </footer>
+  </body>
+</html>
